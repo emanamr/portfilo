@@ -7,12 +7,12 @@ pt----> use with printing*/
 /*start basic style*/
 
 /*google fonts*/
-@import url(https://fonts.google.com/specimen/Permanent+Marker);
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=East+Sea+Dokdo&family=Marck+Script&family=Permanent+Marker&family=Playball&display=swap');
 
-@import url(https://fonts.google.com/specimen/Neuton);
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=East+Sea+Dokdo&family=Marck+Script&family=Neuton:ital@1&family=Permanent+Marker&family=Playball&display=swap');
 /*like hand write*/
-@import url(https://fonts.google.com/specimen/Parisienne);
-@import url(https://fonts.google.com/specimen/Caveat);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=East+Sea+Dokdo&family=Marck+Script&family=Playball&display=swap');
 
 
 *{
@@ -22,10 +22,13 @@ pt----> use with printing*/
 }
 
 /*start basic style*/
+html{
+  font-size:22px;
+}
 body{
   margin:0;
   padding:0; 
-  font-size:20px;
+  font-size:22px;
   font-family:'Neuton',sans-serif,'Permanent Marker';
   text-align:center;
   background-color: #111;
@@ -48,14 +51,14 @@ hr.soften {
 
 header{
     color:#eee;
-    
+    font-size: 1rem;
 }
 
 
 
 ul.conect {
   position: absolute;
-  top:30px;
+  top:25px;
   right:-10%;
   transform: translate(-50%, -50%);
   margin:0;
@@ -218,7 +221,7 @@ img.image {
 
 
 .hand-font{
-    font-family: 'MyWebFont'!important;
+    font-family: 'Marck Script';
 }
 
 /*end my framework*/
