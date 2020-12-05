@@ -195,6 +195,94 @@ img.image {
   border : 20px solid #e6e6e6;
   margin:10px;
   padding:20px;
+  position: relative;
+}
+/*circule rotate*/
+.banner::before{
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+.banner::before{
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+.banner::after ,.card::before{
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(0,0,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    top: 12em;
+    right: 9em;
+    z-index: -5;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+.banner::after,.card::before  {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+
+.conect::after {
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(0,0,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    top: 5em;
+   left: 3em;
+    z-index: -5;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+.conect::after {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+.navbar::after {
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    left: 20vw;
+    bottom: -5em;
+    z-index: -5;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+.navbar::after{
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg)
+		           translate(-1em)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-1em) 
+		           rotate(-360deg);
+	}
 }
 
 /*end page contant style*/
@@ -214,7 +302,7 @@ img.image {
     font-size:.9rem;
 }
 .lower{
-    font-size:.75rem;
+    font-size:.85rem !important;
     color:#ddd;
     font-style:italic;
 }
@@ -228,8 +316,9 @@ img.image {
 /*mobile and tab*/
 @media only screen and (max-width: 600px ){
   html{
-    font-size: 15px;
+    font-size: 15px !important;
   }
+
   .conect{
     width:70%;
     margin:auto;
@@ -243,9 +332,9 @@ img.image {
   }
   .card{
   
-    width: 18rem;
+    width: 15rem;
     margin:auto;
-    margin-top:25%;
+    margin-top:30%;
   }
   .card-body{
     background-color: #333;
@@ -262,5 +351,6 @@ img.image {
   }
   .banner{
     margin-top:25%;
+    position: relative;
   }
 }
