@@ -32,7 +32,7 @@ body{
   font-family:'Neuton',sans-serif,'Permanent Marker';
   text-align:center;
   background-color: #111;
-  height:6000px;
+ 
 }
 
 hr.soften {
@@ -130,22 +130,24 @@ ul.conect li:nth-child(6) a:hover .fa{
 .navbar{
     top:100px;
 }
-ul.navbar-nav a:hover { 
+ul.navbar-nav a:hover,.navbar__menu .menu__link:hover a{ 
     color: #00f !important; 
 }
 
 
-.navbar-nav li {
+.navbar-nav li,.navbar__menu li.menu__link{
   letter-spacing: 0;
 }
 
 .navbar-nav li:hover,
-.navbar-nav li:active {
+.navbar-nav li:active , .navbar__menu li.menu__link:hover,
+.navbar__menu li.menu__link:active {
   letter-spacing: 5px;
 }
 
 .navbar-nav li:after,
-.navbar-nav li:before {
+.navbar-nav li:before , .navbar__menu li.menu__link:after,
+.navbar__menu li.menu__link:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -160,7 +162,8 @@ ul.navbar-nav a:hover {
 }
 
 .navbar-nav li:hover:after,
-.navbar-nav li:hover:before {
+.navbar-nav li:hover:before, .navbar__menu li.menu__link:hover:after,
+ .navbar__menu li.menu__link:hover:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-color: #fff;
@@ -169,7 +172,7 @@ ul.navbar-nav a:hover {
   width: 70%;
 }
 
-.navbar-nav li:hover:before {
+.navbar-nav li:hover:before,.navbar__menu li.menu__link:hover:before {
   bottom: auto;
   top: 0;
   width: 70%;
