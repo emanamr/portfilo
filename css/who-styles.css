@@ -162,7 +162,7 @@ section .btn-top .btn {
     .landing__container {
         max-width: 40em;
         padding: 2em;
-        font-size: 1em;
+        font-size: .8em;
     }
 }
 
@@ -452,6 +452,13 @@ section.your-active-class .landing__container::after {
 }
 
 
+@media (max-width: 500px) {
+  .quote-wrapper {
+    width: 200px !important;
+    height: 200px !important;
+    
+  }
+}
 /*small circle*/
 
 
